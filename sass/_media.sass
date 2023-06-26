@@ -1,0 +1,211 @@
+@media (max-width: 1200px) // проверяем на ширине экрана 992px
+	.menu
+		&:last-child
+			color: #f104be
+		&_item
+			padding-right: 17px
+			&:last-child
+				color:  #04f137
+		&_link
+			font-size: 13px
+	.reasons
+		&_block
+			align-items: flex-start
+		&_descr
+			width: 300px
+			
+
+@media (max-width: 991px)  // проверяем на ширине экрана 768px
+	.menu
+		&_item
+			padding-right: 7px  
+		&_link
+			font-size: 11px   
+	.promo
+		&_header  
+			font-size: 50px 
+		&_subheader 
+			font-size: 25px 
+		&_descr
+			font-size: 15px   
+		&_btn  
+			height: 46px
+			font-size: 14px
+	.reasons
+		&_block
+			display: flex
+			flex-direction: column
+			align-items: center
+		&_descr
+			width: 300px
+			margin-top: 20px
+
+	
+	.mobile
+		&_item
+			width: 260px  
+	.footer
+		&_wrapper
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			text-align: center
+		&_wrapper>div  
+			width: 80%
+			&:nth-child(2) 
+				order: -1
+		&_wrapper>div>div
+			margin: 0 auto
+			margin-top: 20px
+
+@media (max-width: 767px) // проверяем на ширине экрана 576px
+	.menu 
+		flex-direction: column 
+		justify-content: center
+		// align-items: center
+		position: fixed
+		top: 0
+		left: -400px
+		width: 50%
+		height: 100vh
+		background-color: rgba(0, 0, 0, 0.8)  
+		padding: 20px 15px
+		transition: 0.5s all
+		&_active 
+			left: 0
+		&_item
+			padding-right: 0
+			border: none
+			margin-top: 10px
+		&_link
+			font-size: 20px		
+	
+	.burger
+		display: block
+		position: absolute
+		height: 12px
+		width: 40px
+		top: 50%
+		right:40px
+		transform: translateY(-50%)
+		span
+			display: block
+			background-color: #fff
+			height: 2px 
+			width: 100%
+			margin-top: 4px
+			transition: 0.4s all
+		&_active
+			span
+				&:first-child
+					transform: translateY(3px) rotate(45deg)
+				&:nth-child(2)
+					display: none
+				&:last-child
+					transform: translateY(-3px) rotate(-45deg)
+	.xs-hiden
+		display: none
+	.xs-visible	
+		display: block
+	.subheader
+		&_phone
+			color: #fff
+			font-size: 16px
+			text-transform: uppercase
+			text-align: center
+			font-weight: 400
+		&_btn	
+			display: block
+			// width: 100px
+			height: 30px
+			margin: 0 auto
+
+	.footer
+		&_links
+			width: 100%	
+
+@media (max-width: 575px) 	// проверяем на ширине экрана 320px
+
+	nav
+		// height: 30px
+		.menu
+			&_item
+				width: 100%
+				padding: 5px 0
+			&_link
+				display: block
+	header
+		// height: 30px	
+	.subheader
+		&_official
+			display: none
+	.promo
+		height: 400px
+		&_header
+			font-size: 30px
+			line-height: 38px
+		&_subheader
+			font-size: 20px	
+			line-height: 28px
+		&_descr
+			display: none	
+		&_btn
+			margin-top: 30px
+			width: 200px		
+	// .reasons
+	// 	&_title
+	// 		28px	
+	.title
+		font-size: 28px
+		line-height: 30px
+		margin-top: 20px
+
+	.subtitle
+		font-size: 14px		
+		margin-top: 10px	
+
+	.choice
+		height: 600px
+		&_top
+			height: 290px
+
+	.city
+		height: 400px				
+
+	.footer
+		&_divider
+			width: 253px
+			margin: 0 auto
+		&_wrapper	
+			padding-top: 20px
+		&_wrapper > div
+			width: 100%
+			display: flex
+			flex-wrap: wrap			
+			justify-content: center
+			margin-bottom: 20px
+			&:nth-child(1)
+				order: 2
+			&:nth-child(2)
+				order: 1
+			&:nth-child(3)
+				order: 3
+		&_links
+			// width: 290px
+			&_main
+				padding: 0
+				font-size: 14px
+			&_sub
+				flex-wrap: wrap			
+				justify-content: center	
+				a
+					margin: 0 7px
+
+				
+			
+
+		
+				
+	
+
