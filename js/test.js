@@ -7,4 +7,4 @@ function filter_list(l) {
   return arr;
 }
 var fff =  filter_list([1,2,'a','b']);
-console.log(fff);
+
