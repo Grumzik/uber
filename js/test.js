@@ -26,11 +26,7 @@ function numberOfPairs(gloves)
 
 numberOfPairs(['gray','black','purple','purple','gray','black']);
 
-<<<<<<< HEAD
 function numberOfPairs(gloves) {
-=======
-function numberOfPairs2(gloves) {
->>>>>>> d9fcd300b81ecbe65bdddb0beba2418076fe7c5c
 
   var pairs = 0,  counts = {};
   
@@ -47,31 +43,4 @@ function numberOfPairs2(gloves) {
     
   return pairs;
 }
-<<<<<<< HEAD
-
-
-
-function digitalRoot(n) {
-
-  function sumNum(numb){
-    var str = numb.toString();
-    var sum = 0; 
-    
-    console.log(str);
-    
-    if (str.length === 1) {
-      return numb;
-    } else {
-      for(var char of str){
-        sum += +char;
-      }
-      sumNum(sum);
-    }
-  }  
-  return sumNum(n);
-}
-
-digitalRoot(2574);
-=======
-numberOfPairs2(['gray','black','purple','purple','gray','black']);
->>>>>>> d9fcd300b81ecbe65bdddb0beba2418076fe7c5c
+numberOfPairs(['gray','black','purple','purple','gray','black']);
