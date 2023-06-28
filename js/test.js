@@ -23,9 +23,14 @@ function numberOfPairs(gloves)
   return pair;
 }
 
+
 numberOfPairs(['gray','black','purple','purple','gray','black']);
 
+<<<<<<< HEAD
 function numberOfPairs(gloves) {
+=======
+function numberOfPairs2(gloves) {
+>>>>>>> d9fcd300b81ecbe65bdddb0beba2418076fe7c5c
 
   var pairs = 0,  counts = {};
   
@@ -42,6 +47,7 @@ function numberOfPairs(gloves) {
     
   return pairs;
 }
+<<<<<<< HEAD
 
 
 
@@ -66,3 +72,6 @@ function digitalRoot(n) {
 }
 
 digitalRoot(2574);
+=======
+numberOfPairs2(['gray','black','purple','purple','gray','black']);
+>>>>>>> d9fcd300b81ecbe65bdddb0beba2418076fe7c5c
