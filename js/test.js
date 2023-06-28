@@ -24,3 +24,45 @@ function numberOfPairs(gloves)
 }
 
 numberOfPairs(['gray','black','purple','purple','gray','black']);
+
+function numberOfPairs(gloves) {
+
+  var pairs = 0,  counts = {};
+  
+  for (var color of gloves) {
+  
+    if (!counts.hasOwnProperty(color))
+      counts[color] = 0;
+
+    if (++counts[color] === 2) {
+      counts[color] -= 2;
+      pairs++;
+    }
+  }
+    
+  return pairs;
+}
+
+
+
+function digitalRoot(n) {
+
+  function sumNum(numb){
+    var str = numb.toString();
+    var sum = 0; 
+    
+    console.log(str);
+    
+    if (str.length === 1) {
+      return numb;
+    } else {
+      for(var char of str){
+        sum += +char;
+      }
+      sumNum(sum);
+    }
+  }  
+  return sumNum(n);
+}
+
+digitalRoot(2574);
