@@ -23,4 +23,24 @@ function numberOfPairs(gloves)
   return pair;
 }
 
+
 numberOfPairs(['gray','black','purple','purple','gray','black']);
+
+function numberOfPairs2(gloves) {
+
+  var pairs = 0,  counts = {};
+  
+  for (var color of gloves) {
+  
+    if (!counts.hasOwnProperty(color))
+      counts[color] = 0;
+
+    if (++counts[color] === 2) {
+      counts[color] -= 2;
+      pairs++;
+    }
+  }
+    
+  return pairs;
+}
+numberOfPairs2(['gray','black','purple','purple','gray','black']);
